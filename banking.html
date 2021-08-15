@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icon -->
-    <link rel="icon" href="media/icons/javascript.ico" type="image/x-icon" sizes="256x256">
+    <link rel="icon" href="media/icons/dp.ico" type="image/x-icon" sizes="256x256">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/5485bfc962.js" crossorigin="anonymous"></script>
     <!-- Tailwind CSS -->
@@ -17,16 +17,29 @@
 
 <body>
     <header>
-        <h1 class="text-5xl text-center mt-16">Welcome to <span class="font-bold text-purple-600">Transaction</span>
-        </h1>
+        <div
+            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto w-full mx-auto mt-0 mb-5 bg-green-200 p-5 rounded">
+            <img class="w-2/4 sm:w-2/4 md:w-2/4 lg:w-2/4 xl:w-1/6 mx-auto sm:mx-0 md:mx-0 lg:mx-0 xl:mx-0"
+                src="media/icons/dp.png" alt="">
+            <div class="flex items-center">
+                <h1 class="text-4xl lg:text-5xl text-center">Welcome to <span class="font-bold text-purple-600">
+                        Transaction</span>
+                </h1>
+            </div>
+        </div>
         <h2 class="text-3xl font-semibold text-center mt-5 mb-5 text-yellow-600">
             Let's Calculate Some Money!
         </h2>
     </header>
     <main>
         <!-- Balance and Transaction -->
-        <a class="text-center lg:ml-40 sm:ml-24 ml-16 mx-auto w-3/4 lg:w-1/12 border border-gray-400 rounded px-2 py-2 font-bold uppercase text-white bg-yellow-600"
-            id="login-submit" href=""><button></button>Refresh</a>
+        <div class="flex justify-center">
+            <a class="text-center mx-5 w-3/4 lg:w-1/12 border border-gray-400 rounded px-2 py-2 font-bold uppercase text-white bg-green-600"
+                href=""><button></button>Refresh</a>
+            <a class="text-center mx-5 w-3/4 lg:w-1/12 border border-gray-400 rounded px-2 py-2 font-bold uppercase text-white bg-red-600"
+                href="index.html"><button></button>Logout</a>
+        </div>
+
         <section class="mt-12">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/4 font-semibold mx-auto text-white">
                 <div class="bg-blue-500 p-8 rounded shadow-2xl cursor-pointer overflow-x-auto">
@@ -70,7 +83,7 @@
             </div>
         </section>
     </main>
-    <footer class="font-bold mt-5">
+    <footer class="font-bold mt-28 mb-5">
         <p class="text-center">Copyright &copy; 2021 | All Rights Reserved By</p>
         <p class="text-center text-blue-600">Nafi Mahmud</p>
     </footer>
